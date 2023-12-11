@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container py-5 px-2 shadow-lg m-auto w-50 my-5">
+        <h1>CRUD Product</h1>
+        <input type="text" id="product-name" placeholder="Enter pruduct name" class=" my-3 form-control">
+        <input type="text" id="product-category" placeholder="Enter pruduct catergory" class=" my-3 form-control">
+        <input type="text" id="product-price" placeholder="Enter pruduct price" class=" my-3 form-control">
+        <textarea name="" id="product-decription" cols="30" rows="10" class="form-control" placeholder="Enter Description About The Product"></textarea>
+
+        <button class="btn btn-primary my-3" onclick="getInputValue()">Add Production</button>
+    </div>
+
+    <table class="shadow-lg text-center w-75 m-auto table">
+        <thead>
+            <th>Index</th>
+            <th>Name</th>
+            <th>category</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </thead>
+        <tbody id="demo">
+            
+        </tbody>
+    </table>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
